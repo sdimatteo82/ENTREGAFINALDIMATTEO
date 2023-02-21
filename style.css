@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+  padding: 0%;
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+
+  font-family: "Roboto", sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  height: 3rem;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 50px;
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://d3544la1u8djza.cloudfront.net/APHI/Blog/2016/07-25/beagle+getting+a+bath+in+a+white+tub+-min.jpg");
+  height: 70%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+section {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+article {
+  display: flex;
+  flex: 0 1 300px;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+article img {
+  order: -1;
+  align-self: center;
+}
+
+article button {
+  background: rgb(241, 33, 148);
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(174, 0, 255);
+}
+
+button:hover:before {
+  transform: translatex(100%) rotate(45deg);
+}
+table {
+  text-align: center;
+  background-color: rgb(240, 225, 225);
+  border-radius: 10px;
+  z-index: 1;
+}
+#temperatura {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(
+      90deg,
+      rgb(122, 157, 231),
+      rgb(14, 79, 191),
+      rgb(122, 157, 231)
+    )
+    0 0 / 400% 100%;
+  animation: move-bg 10s infinite linear;
+
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+@keyframes move-bg {
+  to {
+    background-position: 400% 0;
+  }
+}
